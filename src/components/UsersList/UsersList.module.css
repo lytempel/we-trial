@@ -1,0 +1,41 @@
+.tableWrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.table {
+  border: 1px solid var(--primary-color);
+  border-collapse: collapse;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  margin: 0 0 32px 0;
+  min-width: 1000px;
+  width: 100%;
+}
+
+.table tr {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.table thead tr {
+  background-color: var(--primary-color);
+  line-height: 32px;
+}
+
+.table thead th {
+  color: var(--secondary-text-color);
+}
+
+.actions {
+  padding-left: 16px;
+}
+
+.actionButton {
+  background-color: transparent;
+  color: var(--primary-color);
+  min-width: 0;
+  padding: 8px;
+}
+
+.noUsers {
+  margin-bottom: 32px;
+}

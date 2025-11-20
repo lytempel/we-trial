@@ -1,0 +1,62 @@
+.container {
+  padding: 16px;
+  width: 100%;
+}
+
+.container form {
+  margin: 0 auto;
+  max-width: 650px;
+  width: 100%;
+}
+
+.container input {
+  display: block;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin: 32px 0 16px 0;
+  width: 100%;
+}
+
+.formFields {
+  align-items: flex-start;
+  display: flex;
+  gap: 16px;
+}
+
+.formFields > div {
+  flex: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.required::after {
+  color: var(--primary-color);
+  content: "*";
+  margin-left: 2px;
+}
+
+@media (max-width: 600px) {
+  .formFields {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .formFields > div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
